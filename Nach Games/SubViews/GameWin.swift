@@ -49,6 +49,9 @@ struct GameWin: View {
                     }
                 )
         }
+        .onAppear {
+            SoundManager.instance.loopSound(sound: "winSound")
+        }
     }
 }
 

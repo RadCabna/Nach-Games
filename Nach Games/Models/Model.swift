@@ -38,7 +38,27 @@ struct MiniGFour: Equatable {
     var down: Bool
 }
 
+struct MiniGTwo: Equatable {
+    var image: String
+    var turn = false
+}
+
 class Arrays {
+    
+    static var gameTwoArray: [MiniGTwo] = [
+        MiniGTwo(image: "figure1"),
+        MiniGTwo(image: "figure2"),
+        MiniGTwo(image: "figure3"),
+        MiniGTwo(image: "figure4"),
+        MiniGTwo(image: "figure5"),
+        MiniGTwo(image: "figure6"),
+        MiniGTwo(image: "figure7"),
+        MiniGTwo(image: "figure8"),
+        MiniGTwo(image: "figure9"),
+        MiniGTwo(image: "figure10"),
+        MiniGTwo(image: "figure11"),
+        MiniGTwo(image: "figure12")
+    ]
     
     static var GameFourArray: [[MiniGFour]] = [
         [MiniGFour(left: false, right: true, up: false, down: true), MiniGFour(left: true, right: true, up: false, down: false), MiniGFour(men: true ,left: true, right: true, up: false, down: true),

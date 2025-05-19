@@ -138,13 +138,7 @@ struct MiniOne: View {
         
         .onChange(of: numberId) { _ in
             if numberId == 3 {
-                if checkCorrect() {
-                    youWin = true
-                } else {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                        youLose = true
-                    }
-                }
+               checkCorrect()
             }
         }
     }
@@ -155,16 +149,12 @@ struct MiniOne: View {
         }
     }
     
-    func checkCorrect() -> Bool{
-        var gameDone = false
-        for i in 0..<yourNumber.count {
-            if yourNumber[i] == correctNumber[i] {
-                gameDone = true
-            } else {
-                gameDone = false
-            }
-        }
-        return gameDone
+    func checkCorrect(){
+       if correctNumber == yourNumber {
+            youWin = true
+       } else {
+           youLose = true
+       }
     }
     
     func tapOnNumber(id: Int) {

@@ -81,6 +81,12 @@ struct Menu: View {
                 Achievements(showAchievements: $showAchievements)
             }
         }
+        
+        .onAppear {
+            SoundManager.instance.stopAllSounds()
+            SoundManager.instance.loopSound(sound: "musicMain")
+        }
+        
     }
 }
 

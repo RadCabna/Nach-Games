@@ -50,6 +50,9 @@ struct TrainingWin: View {
                     }
                 )
         }
+        .onAppear {
+            SoundManager.instance.loopSound(sound: "winSound")
+        }
     }
 }
 

