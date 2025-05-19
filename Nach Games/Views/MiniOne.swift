@@ -156,14 +156,15 @@ struct MiniOne: View {
     }
     
     func checkCorrect() -> Bool{
+        var gameDone = false
         for i in 0..<yourNumber.count {
             if yourNumber[i] == correctNumber[i] {
-                return true
+                gameDone = true
             } else {
-                return false
+                gameDone = false
             }
         }
-        return false
+        return gameDone
     }
     
     func tapOnNumber(id: Int) {

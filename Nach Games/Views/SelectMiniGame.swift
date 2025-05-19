@@ -27,6 +27,9 @@ struct SelectMiniGame: View {
                             .resizable()
                             .scaledToFit()
                             .frame(height: screenWidth*0.06)
+                            .onTapGesture {
+                                coordinator.navigate(to: .gameMode)
+                            }
                         Spacer()
                         Image("coinCountFrame")
                             .resizable()

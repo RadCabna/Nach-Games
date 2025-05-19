@@ -30,7 +30,7 @@ struct Achieve {
     var name: String
 }
 
-struct MiniGFour {
+struct MiniGFour: Equatable {
     var men = false
     var left: Bool
     var right: Bool
@@ -41,15 +41,15 @@ struct MiniGFour {
 class Arrays {
     
     static var GameFourArray: [[MiniGFour]] = [
-        [MiniGFour(left: false, right: true, up: false, down: true), MiniGFour(left: true, right: true, up: false, down: false), MiniGFour(left: true, right: true, up: false, down: true),
-         MiniGFour(left: true, right: true, up: false, down: false), MiniGFour(left: true, right: false, up: false, down: true), MiniGFour(left: true, right: false, up: false, down: true)],
-        [MiniGFour(left: false, right: true, up: true, down: true), MiniGFour(left: false, right: false, up: false, down: false), MiniGFour(left: false, right: false, up: true, down: false), MiniGFour(left: false, right: true, up: false, down: true), MiniGFour(left: true, right: false, up: false, down: true), MiniGFour(left: false, right: false, up: true, down: true)],
+        [MiniGFour(left: false, right: true, up: false, down: true), MiniGFour(left: true, right: true, up: false, down: false), MiniGFour(men: true ,left: true, right: true, up: false, down: true),
+         MiniGFour(left: true, right: true, up: false, down: false), MiniGFour(left: true, right: true, up: false, down: false), MiniGFour(left: true, right: false, up: false, down: true)],
+        [MiniGFour(left: false, right: true, up: true, down: true), MiniGFour(left: true, right: false, up: false, down: true), MiniGFour(left: false, right: false, up: true, down: false), MiniGFour(left: false, right: true, up: false, down: true), MiniGFour(left: true, right: false, up: false, down: true), MiniGFour(left: false, right: false, up: true, down: true)],
         [MiniGFour(left: false, right: false, up: true, down: true), MiniGFour(left: false, right: true, up: true, down: false), MiniGFour(left: true, right: true, up: false, down: false),
          MiniGFour(left: true, right: false, up: true, down: false), MiniGFour(left: false, right: false, up: true, down: true), MiniGFour(left: false, right: false, up: true, down: true)],
         [MiniGFour(left: false, right: true, up: true, down: true), MiniGFour(left: true, right: true, up: false, down: false), MiniGFour(left: true, right: false, up: false, down: false),
          MiniGFour(left: false, right: true, up: false, down: true), MiniGFour(left: true, right: false, up: true, down: false), MiniGFour(left: false, right: false, up: true, down: true)],
         [MiniGFour(left: false, right: false, up: true, down: true), MiniGFour(left: false, right: true, up: false, down: true), MiniGFour(left: true, right: false, up: false, down: false), MiniGFour(left: false, right: true, up: true, down: false), MiniGFour(left: true, right: false, up: false, down: true), MiniGFour(left: false, right: false, up: true, down: true)],
-        [MiniGFour(left: false, right: false, up: true, down: false), MiniGFour(left: false, right: true, up: true, down: false), MiniGFour(left: true, right: true, up: false, down: true),
+        [MiniGFour(left: false, right: false, up: true, down: false), MiniGFour(left: false, right: true, up: true, down: false), MiniGFour(left: true, right: true, up: false, down: false),
          MiniGFour(left: true, right: true, up: false, down: false), MiniGFour(left: true, right: false, up: true, down: false), MiniGFour(left: false, right: false, up: true, down: false)]
     ]
     
